@@ -18,7 +18,7 @@ export const router = new VueRouter({
       redirect: '/news', //redirect는 페이지 열자마자 특정페이지로 나타냄
     },
     {
-      // path : url 주소
+      // path : url 주소 (url 값)
       path: '/news',
       // component : url 주소로 갔을 떄 표시될 컴포넌트
       component: NewsView,

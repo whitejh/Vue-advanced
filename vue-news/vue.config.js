@@ -8,6 +8,10 @@
 //   },
 // };
 
+module.exports = {
+  lintOnSave: false,
+};
+
 // module.exports = {
 //   lintOnSave: process.env.NODE_ENV !== 'production',
 // };

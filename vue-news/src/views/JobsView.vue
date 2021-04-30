@@ -19,14 +19,6 @@ export default {
     fetchJobsList()
       .then((response) => (this.jobs = response.data))
       .catch((error) => console.log(error));
-
-    // fetchJobsList()
-    //   .then(function(response) {
-    //     vm.jobs = response.data;
-    //   })
-    //   .catch(function(error) {
-    //     console.log(error);
-    //   });
   },
 };
 </script>

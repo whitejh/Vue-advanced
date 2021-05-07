@@ -21,4 +21,12 @@ function fetchAskList() {
   return axios.get(`${config.baseUrl}ask/1.json`); // 백틱기호 사용
 }
 
-export { fetchNewsList, fetchJobsList, fetchAskList };
+function fetchUserInfo(username) {
+  return axios.get(`${config.baseUrl}user/${username}.json`); // 백틱기호 사용
+}
+
+export { 
+  fetchNewsList, 
+  fetchJobsList, 
+  fetchAskList,
+  fetchUserInfo };

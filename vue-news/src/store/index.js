@@ -10,12 +10,13 @@ export const store = new Vuex.Store({
     news: [], // 결국 news라는 배열 안에 호출한 data가 담기게 됨
     jobs: [],
     ask: [],
+    user: {}, // 객체 하나
   },
   getters: {
     fetchedAsk(state) {
       return state.ask;
     },
   },
-  mutations: mutations, //앞 뒤 같으면 축약가능 -> mutations
-  actions: actions, //앞 뒤 같으면 축약가능 -> actions
+  mutations: mutations, //앞 뒤 같으면 축약가능 -> mutations,
+  actions: actions, //앞 뒤 같으면 축약가능 -> actions,
 });

@@ -25,8 +25,14 @@ function fetchUserInfo(username) {
   return axios.get(`${config.baseUrl}user/${username}.json`); // 백틱기호 사용
 }
 
+function fetchCommentItem(id){
+  return axios.get(`${config.baseUrl}item/${id}.json`);
+}
+
 export { 
   fetchNewsList, 
   fetchJobsList, 
   fetchAskList,
-  fetchUserInfo };
+  fetchUserInfo,
+  fetchCommentItem
+};

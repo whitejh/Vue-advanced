@@ -11,10 +11,14 @@ export const store = new Vuex.Store({
     jobs: [],
     ask: [],
     user: {}, // 객체 하나
+    item: [],
   },
   getters: {
     fetchedAsk(state) {
       return state.ask;
+    },
+    fetchedItem(state) {
+      return state.item;
     },
   },
   mutations: mutations, //앞 뒤 같으면 축약가능 -> mutations,

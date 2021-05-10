@@ -2,15 +2,15 @@
 <template>
   <div>
     Ask
-    <p v-for="ask in askItems" v-bind:key="ask">
-      <a :href="ask.url">{{ ask.title }} </a>
-      <small>{{ ask.time_ago }} by {{ ask.user }} </small>
+    <p v-for="item in askItems" v-bind:key="item">
+      <router-link v-bind:to="`item/${item.id}`">{{ item.title }} </router-link>
+      <small>{{ item.time_ago }} by {{ item.user }} </small>
     </p>
   </div>
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+import { mapState, mapGetters } from 'vuex';
 
 export default {
   computed: {

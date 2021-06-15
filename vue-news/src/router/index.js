@@ -11,7 +11,7 @@ Vue.use(VueRouter);
 export const router = new VueRouter({
   // router는 라우터의 정보들을 관리하는 VueRouter 객체
   // 객체 내용들이 router에 담김
-  mode: 'history',
+  mode: 'history', // url에 #(해시값) 제거
   routes: [
     {
       path: '/',

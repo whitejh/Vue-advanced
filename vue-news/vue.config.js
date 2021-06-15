@@ -9,7 +9,7 @@
 // };
 
 module.exports = {
-  lintOnSave: false,
+  lintOnSave: false, //true면 eslint 켜짐, false면 eslint 끔
 };
 
 // module.exports = {

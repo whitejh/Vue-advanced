@@ -1,6 +1,6 @@
 export default {
   SET_NEWS(state, news) {
-    state.news = news; // actions에 있는 response.data가 news 인자로 넘어옴
+    state.news = news; // actions.js에 있는 response.data가 news 인자로 넘어옴
   },
   SET_JOBS(state, jobs) {
     state.jobs = jobs;

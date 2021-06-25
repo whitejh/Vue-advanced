@@ -5,7 +5,6 @@
     <p>karma : {{ userInfo.karma}}</p>
     <p>created : {{ userInfo.created}}</p>
     <p>created_time : {{ userInfo.created_time}}</p>
-
   </div>
 </template>
 

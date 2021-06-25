@@ -1,3 +1,4 @@
+// store/index.js
 import Vue from 'vue';
 import Vuex from 'vuex';
 import mutations from './mutations.js';
@@ -7,7 +8,7 @@ Vue.use(Vuex); //Vuex는 플러그인의 형태로 제공되어서 Vue.use로 Vu
 
 export const store = new Vuex.Store({
   state: {
-    news: [], // 결국 news라는 배열 안에 호출한 data가 담기게 됨
+    news: [], // news라는 배열 안에 호출한 data(response.data)가 담기게 됨
     jobs: [],
     ask: [],
     user: {}, // 객체 하나
